@@ -5,26 +5,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>另眼看时间</title>
+    <link rel="stylesheet" href="http://www.maxfun.co/cssSpriter/all.css?ver=1.2.1">
 </head>
 <style>
     .j-footer {
-        position:absolute;
+        position: fixed;
         left: 0;
         right: 0;
-        bottom: 10px;
+        bottom: 0;
         text-align: center;
         font-size: 12px;
+        padding: 10px 0;
+        background: #fff;
+        z-index: 10000;
+    }
+    h1 {
+        padding: 20px 50px;
+        font-weight: bold;
+    }
+
+    h3{
+        padding: 0px 50px 20px;
+    }
+    a {
+        color: #333;
+        text-decoration: underline;
+    }
+    a:visited {
+        color: #333;
     }
 </style>
 
+ 
+
+
+
 <body>
-    <h1>
-        Hello !
-    </h1>
+    <div class="max_box">
+
+            <h1>
+                    另眼看世界
+                </h1>
+            <h3>
+                发现身边不同的美丽 <a href="https://github.com/zou12e/blog" target="_blank" >博客链接</a> 
+            </h3>
+        
+        <div class="banner_box" id="mydiv">
+            <div id="particles-js" class="particles-js"><canvas class="particles-js-canvas-el" width="2048" height="1000"
+                    style="width: 100%; height: 1000px; position: absolute;"></canvas></div>
+            <script src="http://officialwebsite.maxfun.co/particles.js"></script>
+            <script src="http://www.maxfun.co/js/app.js"></script>
+        </div>
+         
+            
+        
+
+    </div>
+
     <footer class="j-footer">
-        备案号：<a href="http://www.beian.miit.gov.cn" target="_blank">粤ICP备15007178号</a>
-    </footer>
+            备案号：<a href="http://www.beian.miit.gov.cn" target="_blank">粤ICP备15007178号</a>
+        </footer>
+
+    <!-- 
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/swiper.min.js"></script>
+        <script src="./js/common.js"></script>
+        -->
+    <script src="http://officialwebsite.maxfun.co/home.all.js?v=1"></script>
+    <script>
+        var swiper = new Swiper('#scene_container', {
+            slidesPerView: 4,
+            spaceBetween: 0,
+            slidesPerGroup: 1,
+            resistanceRatio: 0,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.slider_next',
+                prevEl: '.slider_prev',
+            },
+        });
+        scrollFn();
+        preventCopy();
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?e8b35a750a0d80c1417e11fdbd3e3d73";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
 </body>
 
 </html>
